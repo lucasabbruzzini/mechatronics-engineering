@@ -1,0 +1,1300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>aula005</title>
+<meta name="generator" content="Namo WebEditor v3.0">
+<style fprolloverstyle="">A:hover {color: red; font-weight: bold}
+</style>
+
+<script language="JavaScript">
+<!--
+function namosw_goto(url, targetstr)
+{
+  if (url == 'backward')
+    history.back(1);
+  else if (url == 'forward')
+    history.forward(1);
+  else {
+     if (targetstr == 'blank') {
+       window.open(url, 'win1');
+     } else {
+       var frameobj;
+       if ((frameobj = eval(targetstr)) != null)
+         frameobj.location = url;
+     }
+  }
+}
+
+//
+-->
+</script>
+
+</head>
+
+<body topmargin="0" leftmargin="0" alink="blue" bgcolor="white" link="blue" text="black" vlink="blue">
+
+<div align="center">
+  <p>&nbsp;&nbsp;&nbsp;&nbsp; <font face="Arial">
+	<a style="text-decoration: none; font-weight: 700;" href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/aulas/Aula005.htm">Aula05</a>&nbsp;&nbsp;&nbsp;
+	<a style="text-decoration: none; font-weight: 700;" href="http://www.eletronica24h.com.br/Curso%20Digital/indexDG.html">&nbsp;Índice 
+	de Aulas</a>&nbsp;
+	<a style="text-decoration: none; font-weight: 700;" href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/aulas/Aula007.htm">Aula07</a></font></p>
+  <table border="0" width="100%">
+    <tbody><tr>
+        <td width="100%">
+            <p align="left"><a name="voltar"><font face="Arial" size="4"><b>ELETRÔNICA 
+            DIGITAL - CIRCUITOS COMBINACIONAIS&nbsp;</b></font></a></p></td>
+    </tr>
+    <tr>
+        <td width="100%"><p align="left"><font face="Arial" size="4"><b>Aula06:Aplicações 
+            de Circuitos Combinacionais</b></font></p></td>
+    </tr>
+    <tr>
+        <td width="100%"><p align="left"><font face="Arial"><b>BIBLIOGRAFIA: 
+            Elementos de Eletrônica Digital - Capuano/Idoeta - Editora 
+            Érica</b></font></p></td>
+    </tr>
+</tbody></table></div>
+<p style="margin-left:11;"><font face="Arial" size="5"><b>1. Comparador Binário</b></font></p>
+<p style="margin-left:11;"><font face="Arial">É um circuito que compara 
+dois números binários tomando a decisão.</font></p>
+<p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Aula6_01.gif" border="0" height="241" width="593"></font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig01: Comparador 
+binário de 1bit</i></b></font><font face="Arial" size="5"><b><br></b></font></p>
+<p style="margin-left:11;"><font face="Arial">A figura1 mostra o caso mais simples, 
+mas é possível comparadores de mais de um bit.</font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><img src="Aula006_arquivos/Aula6_02.gif" border="0" height="365" width="634"></font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig02: Circuito 
+de um comparador de 1 bit&nbsp;&nbsp;</i></b></font></p>
+<p style="margin-left:11;" align="left"><font face="Arial">Para mais bits, 
+existem CIs específicos como por exemplo o 7485 que é um comparador de 4 bits 
+(A3A2A1A0 e B3B2B1B0).&nbsp; A figura a seguir mostra&nbsp; o CI 7485, 
+comparador de 4 bits.</font></p>
+<p style="margin-left:11;" align="left">
+<img src="Aula006_arquivos/7485.gif" border="0"><br>
+<font face="Arial"><b><i>Fig03: Comparador de 4 bits com 7485&nbsp;&nbsp;
+<a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/comparador_magnitude.CIR">Arquivo MicroCap</a></i></b></font></p>
+<p style="margin-left:11;" align="left"><font face="Arial" size="4"><b>2.</b></font><a name="exp08"><font face="Arial" size="4"><b>Experiência09: Comparador de 1 Bit<br>
+</b></font></a><a name="exp08"><font face="Arial">2.1.&nbsp; Abra o arquivo 
+</font></a><a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/ExpTDC05.msm"><font face="Arial"><b>ExpTDC05</b></font></a><font face="Arial">&nbsp; e&nbsp; identifique os circuitos da&nbsp; figura2. Ative 
+o circuito em seguida verifique o seu funcionamento levantando a TV.&nbsp;</font></p>
+<p style="margin-left:11;"><font face="Arial">Tabela I</font> 
+</p><div align="center"><table border="1">
+    <tbody><tr>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">A</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">B</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">S1</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">S2</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">S3</font><font color="white" face="Arial">xx</font></p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+</tbody></table></div>
+<p style="margin-left:11;"><font face="Arial"><br>
+2.2. Conclusões:</font></p>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>3. Conversão 
+de Códigos Binários&nbsp;</b></font></p>
+<p style="margin-left:11;"><font face="Arial">Os códigos mais comuns 
+são o BCD(8421), octal, hexadecimal e o binário (ver bibliografia 
+para maiores detalhes). Os computadores e circuitos lógicos em geral 
+manipulam bits na forma de 1's e 0's, os seres humanos entendem as informações 
+na base 10, desta forma os circuitos codificadores e decodificadores são 
+necessários para que possam traduzir de maquina para ser humano e vice 
+versa as informações resultantes de entradas e saídas.&nbsp; 
+. A seguir o diagrama de blocos básico de uma calculadora que mostra 
+a necessidade de usarmos os codificadores&nbsp; e decodificadores.</font></p>
+<p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Aula6_03.gif" border="0" height="297" width="721"></font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig04: Diagrama 
+de blocos de uma calculadora</i></b></font></p>
+<p style="margin-left:11;"><font face="Arial">De uma forma geral todo circuito 
+digital tem um diagrama semelhante ao da figura04.</font></p>
+<p style="margin-left:11;"><font face="Arial">A seguir daremos alguns exemplos 
+de codificadores e decodificadores.</font></p>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>4. Codificador de 
+Decimal para BCD</b></font></p>
+<p style="margin-left:11;"><font face="Arial">O CI 74147 tem como entrada um 
+bit que representa um numero decimal de 1 a 9 e como saída um numero 
+representado em BCD (</font><font face="Arial"><i>Binary Coded Decimal </i></font><font face="Arial">-Decimal&nbsp; Codificado em&nbsp; Binário).</font> 
+</p><table border="0" width="100%">
+    <tbody><tr>
+        <td width="50%"><p style="margin-left:11;" align="center"><font face="Arial"><img src="Aula006_arquivos/Aula6_04.gif" border="0" height="229" width="110"></font></p></td>
+        <td width="50%"><table border="1" width="100%">
+                <tbody><tr>
+                    <td colspan="9" align="center" width="68%"><p style="margin-left:11;"><font face="Arial">Entradas</font></p></td>
+                    <td colspan="4" align="center" width="32%"><p style="margin-left:11;"><font face="Arial">Saídas</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">2</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">3</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">4</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">5</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">6</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">7</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">8</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">9</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">D</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">C</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">B</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">A</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="7%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="8%"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                </tr>
+            </tbody></table></td>
+    </tr>
+    <tr>
+        <td align="center" width="50%"><p style="margin-left:11;"><font face="Arial">( 
+            a )</font></p></td>
+        <td align="center" width="50%"><p style="margin-left:11;"><font face="Arial">( 
+            b )</font></p></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" width="100%"><p style="margin-left:11;"><font face="Arial"><b><i>Fig05: ( a ) CI74147 codificador de prioridade 
+            de decimal para BCD ( b ) TV&nbsp;</i></b></font></p></td>
+    </tr>
+</tbody></table>
+<p style="margin-left:11;"><font face="Arial">Obs: H (Hight)=1 e L (low)=0</font></p>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>5.</b></font><a name="exp09"><font face="Arial" size="4"><b>Experiência10: Codificador de Prioridade de 
+Decimal para BCD<br>
+</b></font></a><a name="exp09"><font face="Arial">5.1.&nbsp; Abra o arquivo 
+</font></a><a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/ExpTDC06.msm"><font face="Arial"><b>ExpTDC06</b></font></a><font face="Arial">&nbsp; e&nbsp; identifique o circuito da&nbsp; figura 6 a seguir. 
+Ative o circuito em seguida verifique o seu funcionamento para cada situação 
+da TV.&nbsp;</font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><img src="Aula006_arquivos/Aula6_05.gif" border="0" height="385" width="537"></font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig06:&nbsp; 
+CI74147 codificador de prioridade de decimal para BCD&nbsp;</i></b></font></p>
+<p style="margin-left:11;"><font face="Arial">Tabela II</font> 
+</p><div align="center"><table border="1">
+    <tbody><tr>
+        <td colspan="9" align="center"><p style="margin-left:11;"><font face="Arial">Entradas</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">Display 
+            - Numero&nbsp;</font></p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">1</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">2</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">3</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">4</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">5</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">6</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">7</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">8</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">9</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">X</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+</tbody></table></div>
+<p style="margin-left:11;"><font face="Arial">Observe a necessidade&nbsp; de 
+inverter as saídas para obter o valor correto.</font></p>
+<p style="margin-left:11;"><font face="Arial">5.2. Conclusões</font></p>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>6. Decodificador de 
+BCD para Decimal&nbsp;</b></font></p>
+<p style="margin-left:11;"><font face="Arial">Esse circuito faz o contrario 
+do anterior, isto é, para uma dada entrada em BCD somente uma das saídas 
+será ativada.</font> 
+</p><div align="center"><table border="0">
+    <tbody><tr>
+        <td><p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Aula6_06.gif" border="0" height="232" width="119"></font></p></td>
+        <td><div align="center"><table border="1" width="387">
+                <tbody><tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;" align="center"><font face="Arial">Nº</font></p></td>
+                    <td colspan="4" align="center" width="82"><p style="margin-left:11;"><font face="Arial">Entradas BCD</font></p></td>
+                    <td colspan="10" align="center" width="214"><p style="margin-left:11;"><font face="Arial">Saída Decimal</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;">&nbsp;</p></td>
+                    <td align="center" width="17"><p style="margin-left:11;">&nbsp;</p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">&nbsp;D&nbsp;</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">&nbsp;C&nbsp;</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">B</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">&nbsp;A&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;0&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;1&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;2&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;3&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;4&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;5&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;6&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;7&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;8&nbsp;</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;9&nbsp;</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha1</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha2</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha3</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">2</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha4</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">3</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha5</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">4</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha6</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">5</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha7</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">6</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha8</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">7</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha9</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">8</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha10</font></p></td>
+                    <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">9</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha11</font></p></td>
+                    <td rowspan="6" align="center" width="17"><p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Invalida.gif" border="0" height="65" width="33"></font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha12</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha13</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha14</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha15</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+                <tr>
+                    <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha16</font></p></td>
+                    <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="21"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                    <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+                </tr>
+            </tbody></table></div></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">( a 
+            )</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">( b 
+            )</font></p></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><p style="margin-left:11;"><font face="Arial"><b><i>Fig07: 
+            ( a ) CI7442 Decodificador de BCD para Decimal&nbsp; ( b ) TV&nbsp;</i></b></font></p></td>
+    </tr>
+</tbody></table></div>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>7.</b></font><a name="exp10"><font face="Arial" size="4"><b>Experiência11: Decodificador de BCD para Decimal&nbsp;</b></font></a></p>
+<p style="margin-left:11;"><font face="Arial">7.1.</font><font face="Arial" size="4"><b>&nbsp;</b></font><font face="Arial"> Abra o arquivo </font><a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/ExpTDC07.msm"><font face="Arial"><b>ExpTDC07</b></font></a><font face="Arial">&nbsp; ou&nbsp;&nbsp;
+<b><a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/Decodificador%20de%20BCD%20para%20Decimal%C2%A0.CIR">&nbsp;ExpTD07_MicroCap&nbsp;&nbsp;
+</a></b>&nbsp;e&nbsp; identifique 
+o circuito da&nbsp; figura 8 a seguir. No caso do Multisim ligue a chave de 
+simulação, para o MicroCap execute uma analise Dynamic DC Ative o circuito em seguida verifique 
+o seu funcionamento para cada situação da TV.&nbsp;</font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><img src="Aula006_arquivos/Aula6_07.gif" border="0" height="390" width="541"></font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig08: Circuito 
+decodificador de BCD para decimal</i></b></font></p>
+<p style="margin-left:11;"><font face="Arial">Tabela II</font> 
+</p><div align="center"><table border="1" width="385">
+    <tbody><tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;" align="center"><font face="Arial">Nº</font></p></td>
+        <td colspan="4" align="center" width="82"><p style="margin-left:11;"><font face="Arial">Entradas BCD</font></p></td>
+        <td colspan="10" align="center" width="214"><p style="margin-left:11;"><font face="Arial">Saída Decimal</font></p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="17"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">&nbsp;D&nbsp;</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">&nbsp;C&nbsp;</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">B</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">&nbsp;A&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;0&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;1&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;2&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;3&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;4&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;5&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;6&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;7&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;8&nbsp;</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;"><font face="Arial">&nbsp;9&nbsp;</font></p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha1</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha2</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha3</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">2</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha4</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">3</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha5</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">4</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha6</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">5</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha7</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">6</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha8</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">7</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha9</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">8</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha10</font></p></td>
+        <td align="center" width="17"><p style="margin-left:11;"><font face="Arial">9</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha11</font></p></td>
+        <td rowspan="6" align="center" width="17"><p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Invalida.gif" border="0" height="65" width="33"></font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha12</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha13</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha14</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center" width="33"><p style="margin-left:11;"><font face="Arial">Linha15</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td align="center" width="25"><p style="margin-left:11;"><font face="Arial">L</font></p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td align="center" width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td width="33"><p style="margin-left:11;"><font face="Arial">Linha16</font></p></td>
+        <td width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td width="19"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td width="25"><p style="margin-left:11;"><font face="Arial">H</font></p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+        <td width="16"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+</tbody></table></div>
+<p style="margin-left:11;"><font face="Arial">Observe a necessidade de inverter 
+as saídas para acender o indicador correspondente à entrada.</font></p>
+<p style="margin-left:11;"><font face="Arial">7.2.&nbsp; Conclusões</font></p>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>8. </b></font><a name="decoderBCD7seg"><font face="Arial" size="4"><b>Decodificador de BCD Para Sete Segmentos</b></font></a></p>
+<p style="margin-left:11;"><font face="Arial">Um decodificador de BCD para sete 
+segmentos é usado quando queremos visualizar resultados em decimal. O 
+indicador mais usado é o </font><font face="Arial"><i>display</i></font><font face="Arial"> de sete segmentos. Esse&nbsp; indicador pode ser só para 
+decimal (0 a 9) ou pode ser também para hexadecimal (indica alem dos 
+números de 0a 9, também as letras A,B,C, D, E e F). No caso mais 
+comum é constituído de LED's sendo que o segmento (LED)&nbsp; 
+pode acender com nível&nbsp; alto (</font><font face="Arial"><i>display</i></font><font face="Arial"> catodo comum) ou nível baixo (</font><font face="Arial"><i>display</i></font><font face="Arial"> anodo comum). A figura a seguir mostra a disposição 
+dos LED's na construção de displays&nbsp; catodo comum e anodo 
+comum.</font> 
+</p><table border="0" width="100%">
+    <tbody><tr>
+        <td width="50%"><p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Aula6_08.gif" border="0" height="205" width="319"></font></p></td>
+        <td width="50%"><p style="margin-left:11;"><font face="Arial"><img src="Aula006_arquivos/Aula6_09.gif" border="0" height="212" width="330"></font></p></td>
+    </tr>
+    <tr>
+        <td align="center" width="50%"><p style="margin-left:11;"><font face="Arial">( 
+            a )</font></p></td>
+        <td align="center" width="50%"><p style="margin-left:11;"><font face="Arial">( 
+            b )</font></p></td>
+    </tr>
+    <tr>
+        <td colspan="2" width="100%"><p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig09 ( a ) Display tipo catodo comum&nbsp;&nbsp;
+		<a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/display7seg.CIR">Arquivo MicroCap</a> 
+            ( b ) anodo comum</i></b></font></p></td>
+    </tr>
+</tbody></table>
+<p style="margin-left:11;"><font face="Arial">É importante observar que 
+para cada tipo de display teremos um decodificador adequado a ele. Por exemplo 
+para anodo comum pode ser usado o 7447.</font></p>
+<p style="margin-left:11;"><font face="Arial" size="4"><b>9. </b></font><a name="exp11"><font face="Arial" size="4"><b>Experiência12: Decodificador de BCD para 7 Segmentos&nbsp;<br>
+</b></font></a><a name="exp11"><font face="Arial">9.1.&nbsp; Abra o arquivo 
+</font></a><a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/ExpTDC08.msm"><font face="Arial"><b>ExpTDC08</b></font></a><font face="Arial">&nbsp; ou&nbsp;&nbsp; <b>
+<a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/decoder_BCD_7seg.CIR">ExpTD08 MicroCap</a></b>&nbsp; e&nbsp; identifique o circuito da&nbsp; figura 10&nbsp;&nbsp; a 
+seguir. Ative o circuito em seguida verifique o seu funcionamento para cada 
+situação da TV.&nbsp;</font></p>
+<p style="margin-left:11;"><font face="Arial"><i><img src="Aula006_arquivos/Aula6_10.gif" border="0" height="621" width="779"></i></font></p>
+<p style="margin-left:11;" align="center"><font face="Arial"><b><i>Fig10: Decodificador 
+de BCD para 7 segmentos <a href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/arquivosmsim/decoder_BCD_7seg.CIR">Arquivo 
+Microcap</a></i></b></font></p>
+<p style="margin-left:11;"><font face="Arial">Tabela III</font> 
+</p><div align="center"><table border="1">
+    <tbody><tr>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">D</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">C</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">B</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font color="white" face="Arial">xx</font><font face="Arial">A</font><font color="white" face="Arial">xx</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">DISPLAY</font></p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">0</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+    <tr>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;"><font face="Arial">1</font></p></td>
+        <td align="center"><p style="margin-left:11;">&nbsp;</p></td>
+    </tr>
+</tbody></table></div>
+<p style="margin-left:11;"><font face="Arial">9.2. &nbsp; Conclusões:</font> 
+
+</p><p style="margin-left:11;" align="center">&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Arial">
+<a style="text-decoration: none; font-weight: 700;" href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/aulas/Aula005.htm">Aula05</a>&nbsp;&nbsp;&nbsp;
+<a style="text-decoration: none; font-weight: 700;" href="http://www.eletronica24h.com.br/Curso%20Digital/indexDG.html">&nbsp;Índice 
+de Aulas</a>&nbsp;
+<a style="text-decoration: none; font-weight: 700;" href="http://www.eletronica24h.com.br/Curso%20Digital/aparte2/aulas/Aula007.htm">Aula07</a></font>
+
+
+</p></body></html>

@@ -1,0 +1,149 @@
+|CIRCUITO
+D[0] => Mux0.IN7
+D[1] => Mux0.IN6
+D[2] => Mux0.IN5
+D[3] => Mux0.IN4
+D[4] => Mux0.IN3
+D[5] => Mux0.IN2
+D[6] => Mux0.IN1
+D[7] => Mux0.IN0
+CLOCK => PROJETO12:FF0.CLKN
+CLOCK => PROJETO12:FF1.CLKN
+CLOCK => PROJETO12:FF2.CLKN
+INICIA => AUX1.IN1
+INICIA => PROJETO12:FF0.CLRN
+INICIA => PROJETO12:FF1.CLRN
+INICIA => PROJETO12:FF2.CLRN
+INICIA => PROJETO12:FF6.CLRN
+INICIA => PROJETO12:FF7.CLRN
+INICIA => PROJETO12:FF8.CLRN
+S0 <= S0.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF0
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF1
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF2
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF3
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF4
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF5
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF6
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF7
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CIRCUITO|PROJETO12:FF8
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

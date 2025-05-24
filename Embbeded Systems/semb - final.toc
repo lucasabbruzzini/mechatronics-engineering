@@ -1,0 +1,35 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{2}{chapter.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Objetivos}}{3}{chapter.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento Te\IeC {\'o}rico}}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}Raspberry Pi}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}Reconhecimento Facial}{4}{section.3.2}
+\contentsline {section}{\numberline {3.3}OpenCV}{4}{section.3.3}
+\contentsline {section}{\numberline {3.4}Python}{5}{section.3.4}
+\contentsline {section}{\numberline {3.5}ROS}{5}{section.3.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Projeto}}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Instala\IeC {\c c}\IeC {\~a}o}{6}{section.4.1}
+\contentsline {section}{\numberline {4.2}Desenvolvimento}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}Funcionamento}{7}{section.4.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{10}{chapter.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Agradecimentos}}{11}{chapter.6}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Anexos}}{12}{chapter.7}
+\contentsline {section}{\numberline {7.1}camera.cpp}{12}{section.7.1}
+\contentsline {section}{\numberline {7.2}camera\_node.cp}{13}{section.7.2}
+\contentsline {section}{\numberline {7.3}facenet.py}{13}{section.7.3}
+\contentsline {section}{\numberline {7.4}$fr\_utils.py$}{16}{section.7.4}
+\contentsline {section}{\numberline {7.5}$inception\_block\_v2.py$}{19}{section.7.5}
+\contentsline {section}{\numberline {7.6}$rec.py$}{23}{section.7.6}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{24}{section*.2}
+\contentsfinish 

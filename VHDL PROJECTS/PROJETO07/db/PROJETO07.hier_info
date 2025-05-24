@@ -1,0 +1,10 @@
+|PROJETO07
+D0 => Mux0.IN0
+D1 => Mux0.IN1
+D2 => Mux0.IN2
+D3 => Mux0.IN3
+A[0] => Mux0.IN5
+A[1] => Mux0.IN4
+S <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

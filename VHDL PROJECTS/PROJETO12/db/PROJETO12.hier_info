@@ -1,0 +1,14 @@
+|PROJETO12
+PRN => Q.IN0
+PRN => Q~reg0.PRESET
+CLRN => Q.IN1
+CLKN => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q << Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
